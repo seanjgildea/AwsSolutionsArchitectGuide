@@ -2,6 +2,7 @@
 A 2019 Guide for the AWS Solutions Architect Associate Exam
 
 
+- [AWS Developer Tools](awsDeveloperTools.md)
 
 - [Domain 1 Design Resilient Architectures] (DesignResilientArchitectures.md)
 
