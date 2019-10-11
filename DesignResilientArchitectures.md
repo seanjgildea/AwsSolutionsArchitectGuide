@@ -57,4 +57,4 @@
 
 ## 1.4 Determine how to design high availability and/or fault tolerant architectures.
 
-- Operate at scale. Stay highly operational 
+- 
