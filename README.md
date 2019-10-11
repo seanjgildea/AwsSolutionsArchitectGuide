@@ -1,5 +1,4 @@
-# AWS Solutions Architect Guide
-A 2019 Guide for the AWS Solutions Architect Associate Exam
+# 2019 AWS Solutions Architect Associate Exam Guide
 
 
 - [Domain 1 Design Resilient Architectures](DesignResilientArchitectures.md)
