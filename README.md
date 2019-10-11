@@ -4,7 +4,7 @@ A 2019 Guide for the AWS Solutions Architect Associate Exam
 
 - [Domain 1 Design Resilient Architectures](DesignResilientArchitectures.md)
 
-- [Domain 2 Define Performant Architectures](DefinePerformanceArchitectures.md)
+- [Domain 2 Define Performant Architectures](DefinePerformantArchitectures.md)
 
 - [Domain 3 Specify Secure Applications and Architectures](SpecifySecureApplicationsAndArchitectures.md)
 
