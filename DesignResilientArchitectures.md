@@ -2,7 +2,7 @@
 
 ## 1.1 Choose reliable/resilient storage.
 
-### 3 Options for Storage
+3 Options for Storage
 
 - EC2 Instance Store ( Ephemeral storage ) Fixed capacity, app level durability ( caching, storing data )
 
@@ -26,15 +26,30 @@
   
 - Object Storage 
 
-  - S3 is the primary option 
-  - S3 is a distributed system
+  - S3 Standard, 99.99% availability, 11 9's durability
+  - S3- IA ( Infrequently Accessed ) Lower fee than S3 but charged retrieval fee
+  - S3 One Zone - IA , do not require multiple availability zone data resilience -
+  - S3 - Intelligent Tiering ( Optimizes costs by moving data to lower tiers automatically )
+  - S3 Glacier - Data archive
+  - S3 Glacier Deep Archive - retrieval time of 12 hrs is acceptable ( Lowest cost! )
   - S3 gives you strong consistency for new objects
   - S3 gives you eventual consistency for existing objects
-  - Many storage classes and Durability
+  - Many storage classes and 99.999999999 Durability
+  - Glacier ( bulk 12 hrs, expedited 5 minutes ) encrypts data by default , regional durability
+  - EBS, S3 and EFS allow native encryption of data at rest
+  - S3 bucket names are global
+  - To prevent accidental data loss with S3, enable versioning and MFA Delete on bucket
+  
+- Encryption At Rest (Server Side) is achieved by:
+  - S3 Managed Keys - SSE - S3
+  - AWS Key Management Service, Managed Keys - SSE-KMS ( cooperative encryption )
+  - Server Side Encryption with Customer provided Keys - SSE-C
 
 ## 1.2 Determine how to design decoupling mechanisms using AWS services.
 
-- If one component fails, the other does not
+- Use SQS to queue work asynchronously even when resources are offline 
+- Use SQS with a load balancer when distributing a heavy load to instances
+- Use Elastic IP addresses to route clients to a new server identity when one goes offline
 
 ## 1.3 Determine how to design a multi-tier architecture solution.
 
