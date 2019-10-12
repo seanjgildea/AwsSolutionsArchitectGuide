@@ -1,4 +1,4 @@
-# Domain 2: Define Performant Architectures
+# Domain 2: Design Performant Architectures
 
 ## 2.1 Choose performant storage and databases.
 
