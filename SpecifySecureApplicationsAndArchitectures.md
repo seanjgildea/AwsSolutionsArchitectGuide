@@ -50,4 +50,3 @@ Network isolation:
   - Outbound-only access: NAT/proxy/bastion host
   - Not accessible from the public internet
   - Do not have a routing table entry to an internet gateway
--
