@@ -39,4 +39,28 @@ Performant Databases
 
 ## 2.3 Design solutions for elasticity and scalability.
 
-- 
+CloudFront
+- used for static and dynamic content
+- using cloudfront for dynamic content means the request and response ride over the AWS backbone
+- supports SSL 
+- supports Shield ( DDOS ) and WAF ( Filter out requests based on content of request )
+
+Scaling
+- Launch Configuration is run by Auto-Scaling when launching a fully configured instance automatically
+- Vertical vs Horizontal Scaling
+- AWS Auto-Scaling automatically launches and terminates instances
+- Cloudwatch monitors CPU utilization on a load balancer
+- Setup an alarm if our CPU goes over 80%, which is intercepted by Auto-Scaling
+- Auto Scaling policies determine what kinds of instances they should be and how many to launch
+
+Auto Scaling Components 
+- Launch Configuration
+  - Launch Configuration specifies EC2 instance size and AMI name
+- Auto Scaling Group
+  - references the launch configuration
+  - specifies min, max and desired size of auto scaling group
+  - may reference an ELB
+  - health check type
+- Auto Scaling Policy
+  - specifies how much to scale in or out
+  - one or more may be attached to auto scaling group
