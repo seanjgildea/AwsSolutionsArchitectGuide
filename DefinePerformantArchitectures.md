@@ -64,3 +64,7 @@ Auto Scaling Components
 - Auto Scaling Policy
   - specifies how much to scale in or out
   - one or more may be attached to auto scaling group
+
+CloudWatch
+- monitors CPU, Network and Queue Size
+- allows custom metrics from your applications
