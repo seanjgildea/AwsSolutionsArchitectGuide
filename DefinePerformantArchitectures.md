@@ -29,4 +29,14 @@ Performant Databases
 
 ## 2.2 Apply caching to improve performance.
 
+- Cache using Cloudfront ( CDN )
+  - If the edge location does not have the data it is fetched from the origin location 
+- Elasticache
+  - Used with databases to take some load off your databases
+  - Memcached ( easy to setup, horizontal scalability, low maintenance, multithreading )
+  - Redis ( complex ) 
+  - Elasticache sets them up for you
+
 ## 2.3 Design solutions for elasticity and scalability.
+
+- 
