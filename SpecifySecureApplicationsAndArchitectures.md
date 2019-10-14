@@ -24,6 +24,10 @@ network.
 - VPC peering and VPN are connectivity services and cannot control traffic for security
 - NAT Gateways must be deployed in public subnets
 
+Bucket Policies
+- Explicit "Deny" will always trump all other permissions
+- 
+
 ## 3.2 Determine how to secure data.
 
 Data in Transit
