@@ -26,7 +26,11 @@ network.
 
 Bucket Policies
 - Explicit "Deny" will always trump all other permissions
-- 
+
+CloudTrail
+- Very important for security
+- Enabled by default on new accounts
+- Auditing tool
 
 ## 3.2 Determine how to secure data.
 
