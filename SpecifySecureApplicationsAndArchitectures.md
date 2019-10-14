@@ -18,6 +18,12 @@
   - Federation: users with active directory
   - Web Identity Federation: Users with web identities from Amazon.com  or other Open ID provider using Secure Token Service (STS)
 
+Network Traffic
+- A security group can grant access to traffic from the allowed networks via the CIDR range for each
+network. 
+- VPC peering and VPN are connectivity services and cannot control traffic for security
+
+
 ## 3.2 Determine how to secure data.
 
 Data in Transit
@@ -43,6 +49,11 @@ Network isolation:
 - NAT Gateways: Allow internet traffic from private subnets
 - Prefer IAM Roles to access key
  
+- VPC endpoints for Amazon S3 provide secure connections to S3 buckets that do not require a
+gateway or NAT instances. 
+- NAT Gateways and Internet Gateways still route traffic over the Internet to the
+public endpoint for Amazon S3. 
+- There is no way to connect to Amazon S3 via VPN
 
 ## 3.3 Define the networking infrastructure for a single VPC application
 
