@@ -66,11 +66,28 @@ public endpoint for Amazon S3.
 
 ## 3.3 Define the networking infrastructure for a single VPC application
 
-- Private subnets:
-  - Outbound-only access: NAT/proxy/bastion host
-  - Not accessible from the public internet
-  - Do not have a routing table entry to an internet gateway
-  - Elastic IPs are sticky until re-assigned for a good reason (such as the instance has been terminated i.e. it is never coming back).
+Private subnets:
+- Outbound-only access: NAT/proxy/bastion host
+- Not accessible from the public internet
+- Do not have a routing table entry to an internet gateway
+- Elastic IPs are sticky until re-assigned for a good reason (such as the instance has been terminated i.e. it is never coming back).
+
+Direct Connect
+- Directly connects your data center to AWS
+- Useful for high throughput workloads ( lots of network traffic )
+- Or if you need a stable and reliable secure connection
+- Good solution if you're using a VPN connection and it keeps dropping out. 
+
+VPC Endpoints
+- Two types
+  - Interface Endpoints
+  - Gateway Endpoints ( Currently supports S3 and DynamoDB )
+- Privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink
+- Does not require an internet gateway, NAT device, VPN connection or AWS Direct Connect connection
+- Instances do not require public IP addresses to communicate with resources in the service
+- Traffic does not leave the Amazon network
+- Endpoints are virtual, horizontally scalled, redundant and hilghly available VPC components 
+- They do not impose availability risks or bandwidth constraints on your network traffic
 
 Route 53
 - You cannot define paths like "/news" for records  
