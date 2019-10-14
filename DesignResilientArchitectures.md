@@ -47,6 +47,9 @@
 
 ## 1.2 Determine how to design decoupling mechanisms using AWS services.
 
+SQS
+- When a retention period expires, the message is deleted
+- After processing you need to delete the message on the queue
 - Use SQS to queue work asynchronously even when resources are offline 
 - Use SQS with a load balancer when distributing a heavy load to instances
 - Use Elastic IP addresses to route clients to a new server identity when one goes offline
