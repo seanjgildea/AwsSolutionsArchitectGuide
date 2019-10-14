@@ -70,3 +70,6 @@ Auto Scaling Components
 CloudWatch
 - monitors CPU, Network and Queue Size
 - allows custom metrics from your applications
+
+Application Load Balancers
+- Can trigger Lambda functions by target group
