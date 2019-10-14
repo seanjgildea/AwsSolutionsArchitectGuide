@@ -9,7 +9,8 @@
   - Access Control Lists let you allow and deny
   - Use security groups to control traffic "into, out of, and between resources"
   - Security Groups are sufficient to allow an instance to access another tier
-  - Security Groups can span multiple Availability Zones
+  - Security Groups can span multiple Availability Zones 
+  - Security Groups cannot span VPCs
   
 - Customers are responsible for:
   - platform, applications, IAM, OS, Network, Firewall, Client side encryption, server side data encryption and network traffic protection
