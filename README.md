@@ -12,4 +12,6 @@
 - [Domain 5 Define Operationally Excellent Architectures](DefineOperationallyExcellentArchitectures.md) 6%
 
 
+## Mock Exams
 
+- [Mock Exam 1](https://d1.awsstatic.com/training-and-certification/docs/AWS_Certified_Solutions_Architect_Associate_Sample_Questions.pdf)
