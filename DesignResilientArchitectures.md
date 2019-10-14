@@ -57,4 +57,7 @@
 
 ## 1.4 Determine how to design high availability and/or fault tolerant architectures.
 
+- Lifecycle configuration allows lifecycle management of objects in a bucket. The configuration is a set
+of one or more rules, where each rule defines an action for Amazon S3 to apply to a group of objects.
+Bucket policies and IAM define access to objects in an S3 bucket.
 - 
