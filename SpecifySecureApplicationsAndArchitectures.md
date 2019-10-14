@@ -22,7 +22,7 @@ Network Traffic
 - A security group can grant access to traffic from the allowed networks via the CIDR range for each
 network. 
 - VPC peering and VPN are connectivity services and cannot control traffic for security
-
+- NAT Gateways must be deployed in public subnets
 
 ## 3.2 Determine how to secure data.
 
