@@ -3,6 +3,8 @@
 ## 2.1 Choose performant storage and databases.
 
 Performant Storage
+- EBS General Purpose SSD can provide bursts of performance up to 3,000 IOPS
+- EBS General Purpose SSD can have a maximum baseline performance of 10,000 IOPS for volume sizes greater than 3.3 TB
 - EBS Volumes mounted as discs 
 - SSD vs HDD ( random access vs sequential access )
 - Offload all static content to S3 instead of keeping it on EC2 servers which dramatically improves your webserver performance for serving dynamic content
