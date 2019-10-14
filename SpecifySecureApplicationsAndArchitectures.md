@@ -27,6 +27,7 @@ network.
 ## 3.2 Determine how to secure data.
 
 Data in Transit
+- Create an Origin Access Identity (OAI) for CloudFront and grant access to the objects in your S3 bucket to that OAI.
 - SSL over web
 - VPN for IPsec
 - IPsec over AWS Direct Connect
@@ -61,3 +62,4 @@ public endpoint for Amazon S3.
   - Outbound-only access: NAT/proxy/bastion host
   - Not accessible from the public internet
   - Do not have a routing table entry to an internet gateway
+  - Elastic IPs are sticky until re-assigned for a good reason (such as the instance has been terminated i.e. it is never coming back).
