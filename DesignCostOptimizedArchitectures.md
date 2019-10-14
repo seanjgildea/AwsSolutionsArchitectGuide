@@ -21,11 +21,16 @@ EBS Pricing Considerations
 
 ## 4.2 Determine how to design cost-optimized compute.
 
+In Reserved Instances, you can use instance flexbility when using Linux and Region. 
+- You will be charged at half the normal on-demand price if using a bigger instance
+- No instance flexibility with Windows, you pay normal on-demand pricing
+
 EC2 Cost Pricing
 - Reserved Instances (75% cheaper compared to on-demand pricing)
   - Standard RIs
   - Convertible RIs: Converted to other EC2 Instance types
   - Scheduled RIs : Few hours every weekend
+  
 - Spot Instances ( 30-45% cheaper than on-demand prices )
   - Spot market price which is dynamic
   - Lose your instance if your price goes above your bid
