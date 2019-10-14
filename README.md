@@ -1,23 +1,15 @@
 # 2019 AWS Solutions Architect Associate Exam Guide
 
 
-- [Domain 1 Design Resilient Architectures](DesignResilientArchitectures.md)
+- [Domain 1 Design Resilient Architectures](DesignResilientArchitectures.md) 34%
 
-- [Domain 2 Define Performant Architectures](DefinePerformantArchitectures.md)
+- [Domain 2 Define Performant Architectures](DefinePerformantArchitectures.md) 24% 
 
-- [Domain 3 Specify Secure Applications and Architectures](SpecifySecureApplicationsAndArchitectures.md)
+- [Domain 3 Specify Secure Applications and Architectures](SpecifySecureApplicationsAndArchitectures.md) 26% 
 
-- [Domain 4 Design Cost-Optimized Architectures](DesignCostOptimizedArchitectures.md) 
+- [Domain 4 Design Cost-Optimized Architectures](DesignCostOptimizedArchitectures.md) 10% 
 
-- [Domain 5 Define Operationally Excellent Architectures](DefineOperationallyExcellentArchitectures.md)
+- [Domain 5 Define Operationally Excellent Architectures](DefineOperationallyExcellentArchitectures.md) 6%
 
-
-# Data Formats Athena Supports:
-- Apache ORC
-- JSON
-- Apache Parquet
-
-# Route 53 Routing Policies
-- Simple, Weighted, Latency, Failover, Multivalue answer, Geoproximity and Geolocation
 
 
