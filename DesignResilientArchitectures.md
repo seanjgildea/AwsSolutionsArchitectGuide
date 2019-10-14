@@ -29,7 +29,7 @@
   - S3 Standard, 99.99% availability, 11 9's durability
   - S3- IA ( Infrequently Accessed ) Lower fee than S3 but charged retrieval fee
   - S3 One Zone - IA , do not require multiple availability zone data resilience -
-  - S3 - Intelligent Tiering ( Optimizes costs by moving data to lower tiers automatically )
+  - S3 - Intelligent Tiering - 99.9% availability ( Moves stale data to lower tiers automatically )
   - S3 Glacier - Data archive
   - S3 Glacier Deep Archive - retrieval time of 12 hrs is acceptable ( Lowest cost! )
   - S3 gives you strong consistency for new objects
