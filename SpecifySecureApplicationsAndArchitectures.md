@@ -71,3 +71,6 @@ public endpoint for Amazon S3.
   - Not accessible from the public internet
   - Do not have a routing table entry to an internet gateway
   - Elastic IPs are sticky until re-assigned for a good reason (such as the instance has been terminated i.e. it is never coming back).
+
+Route 53
+- You cannot define paths like "/news" for records  
