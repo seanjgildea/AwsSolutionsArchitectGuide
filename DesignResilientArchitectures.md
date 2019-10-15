@@ -54,6 +54,11 @@ SQS
 - Use SQS with a load balancer when distributing a heavy load to instances
 - Use Elastic IP addresses to route clients to a new server identity when one goes offline
 
+Short polling 
+- Short polling occurs when the WaitTimeSeconds parameter of a ReceiveMessage request is set to 0 in one of two ways:
+  - The ReceiveMessage call sets WaitTimeSeconds to 0.
+  - The ReceiveMessage call doesn’t set WaitTimeSeconds, but the queue attribute ReceiveMessageWaitTimeSeconds is set to 0.
+
 ## 1.3 Determine how to design a multi-tier architecture solution.
 
 - Each tier can scale independently
