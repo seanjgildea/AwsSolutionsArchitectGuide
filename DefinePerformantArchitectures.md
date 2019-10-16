@@ -37,6 +37,9 @@ Performant Databases
   - Used with databases to take some load off your databases
   - Memcached ( easy to setup, horizontal scalability, low maintenance, multithreading )
   - Redis ( complex ) 
+    - Pub/Sub
+    - Sorted Sets
+    - In-Memory Data Stores
   - Elasticache sets them up for you
 
 ## 2.3 Design solutions for elasticity and scalability.
