@@ -44,3 +44,7 @@ Cloudfront
   - Traffic distribution
   - Requests
   - Data transfer out
+  
+Serverless computing
+- Not about eliminating servers but shifting responsibility to AWS 
+
