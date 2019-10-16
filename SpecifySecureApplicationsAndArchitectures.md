@@ -35,6 +35,10 @@ CloudTrail
 
 ## 3.2 Determine how to secure data.
 
+Securing S3
+- S3 Bucket Policies
+- Access Control Lists
+
 Data in Transit
 - Create an Origin Access Identity (OAI) for CloudFront and grant access to the objects in your S3 bucket to that OAI.
 - SSL over web
