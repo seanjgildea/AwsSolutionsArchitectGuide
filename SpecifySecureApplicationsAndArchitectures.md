@@ -71,6 +71,15 @@ public endpoint for Amazon S3.
 
 ## 3.3 Define the networking infrastructure for a single VPC application
 
+Elastic Load Balancers:
+- Application Load Balancer: HTTP Requests
+- Network Load Balancer: Layer 4 TCP/UDP load balancing, extreme low latency apps
+- Classic Load Balancer: If your app is built within the EC2 Classic network
+- Accessible via VPC endpoints with AWS PrivateLink
+- You can configure a security group for the front-end of an Application Load Balancer (ALB)
+- An ALB is integrated with ACM making binding a certificate to the load balancer very easy
+- cal
+
 Private subnets:
 - Outbound-only access: NAT/proxy/bastion host
 - Not accessible from the public internet
