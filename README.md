@@ -32,3 +32,5 @@
 - Glacier Expedited: 1-5 minutes for archives < 250gb
 - Glacier Standard: 3-5 hours
 - Glacier Bulk: 5-12 hours
+- EBS Volume snapshots to S3 are incremental, which means that only the blocks on the device that have changed afte ryour most recent snapshot are saved. 
+- IAM roles for ECS tasks lets you specify an IAM role that can be used by the containers in a task. 
