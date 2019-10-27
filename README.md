@@ -34,3 +34,7 @@
 - Glacier Bulk: 5-12 hours
 - EBS Volume snapshots to S3 are incremental, which means that only the blocks on the device that have changed afte ryour most recent snapshot are saved. 
 - IAM roles for ECS tasks lets you specify an IAM role that can be used by the containers in a task. 
+- Lifecycle Hooks in Auto Scaling Groups let you put an instance into a 'wait state' before termination so you can perform custom activities and retrieve critical operational data from a stateful instance. 
+- S3 event notification can invoke lambda functions for file processing
+- Aurora clusters can grow up to 64 TB in size and replica lag is less than 100 ms after primary instance has written an update
+- EBS can provision worker processes
