@@ -27,4 +27,8 @@
 - Classic Load Balancers
 - VPC options for private networks
 - Lifecycle policies for S3 Buckets. You specify lifecycle management of objects in an S3 bucket. The configuration is a set of one or more rules where each rule defines an action for S3 to apply to a group of objects. These can be transition actions: "When objects transition from one storage class to another" or Expiration actions: specify when objects expire. 
-
+- Hexadecimal hash for S3 Object prefixes greatly increase performance
+- VPC Flog logs catpure IP traffic going to and from network interfaces in your VPC. It's stored in CloudWatch logs. 
+- Glacier Expedited: 1-5 minutes for archives < 250gb
+- Glacier Standard: 3-5 hours
+- Glacier Bulk: 5-12 hours
