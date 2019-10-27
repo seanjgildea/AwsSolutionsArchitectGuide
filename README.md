@@ -38,3 +38,4 @@
 - S3 event notification can invoke lambda functions for file processing
 - Aurora clusters can grow up to 64 TB in size and replica lag is less than 100 ms after primary instance has written an update
 - EBS can provision worker processes
+- Minimum size of EBS: Throughput Optimized HDD is 500GB
