@@ -22,6 +22,9 @@
 - Route 53 Routing options
 - S3 to Cloudfront
 - Origin Identity Access variations
-- ELB's, ALBs, Classic Load Balancers
+- ELBs
+- ALBs
+- Classic Load Balancers
 - VPC options for private networks
-- 
+- Lifecycle policies for S3 Buckets. You specify lifecycle management of objects in an S3 bucket. The configuration is a set of one or more rules where each rule defines an action for S3 to apply to a group of objects. These can be transition actions: "When objects transition from one storage class to another" or Expiration actions: specify when objects expire. 
+
