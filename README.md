@@ -39,3 +39,9 @@
 - Aurora clusters can grow up to 64 TB in size and replica lag is less than 100 ms after primary instance has written an update
 - EBS can provision worker processes
 - Minimum size of EBS: Throughput Optimized HDD is 500GB
+- Bastion hosts should be deployed in public subnets
+- Redshift Enhanced VPC Routing provides VPC resources access to Redshift. Redshift requires this to access S3 resources. 
+- VPC Endpoints allow you to connect your VPC to AWS resources without requiring a NAT instance
+- Provisioned IOPS SSD is for operations requiring more than 16,000 IOPS or 250 MiB/s of throughput per volume
+- For Redshift, you can enable Cross-Region Snapshots to another region 
+- 
