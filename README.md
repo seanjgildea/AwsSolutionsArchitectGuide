@@ -44,4 +44,9 @@
 - VPC Endpoints allow you to connect your VPC to AWS resources without requiring a NAT instance
 - Provisioned IOPS SSD is for operations requiring more than 16,000 IOPS or 250 MiB/s of throughput per volume
 - For Redshift, you can enable Cross-Region Snapshots to another region 
+- For EBS Volumes, you create a snapshot and copy it to a new region
+- Cloudtrail monitors API calls and sends logs to an S3 bucket
+- Use Multi-AZ to ensure high availability for an RDS service rather than read replicas
+- S3 Pre-signed URL's are the perfect solution when you want to give temporary access to users for S3 buckets
+- Route 53 Multivalue answer routing is perfect for responding to DNS queries of up to 8 healthy records at random
 - 
