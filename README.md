@@ -49,4 +49,15 @@
 - Use Multi-AZ to ensure high availability for an RDS service rather than read replicas
 - S3 Pre-signed URL's are the perfect solution when you want to give temporary access to users for S3 buckets
 - Route 53 Multivalue answer routing is perfect for responding to DNS queries of up to 8 healthy records at random
+- If you need the IPv4 address of your end user, look for the X-Forwarded-For header.
+- Use ALB's if you want to do intelligent routing
+- Use Classic ELB's for basic routing 
+- Both ALB's and CLB's do not create an Elastic IP at creation, you need to copy the A record into Route 53
+- Sticky Sessions: Bind a users session to a specific EC2 instance ( classic load balancer ). This ensures all requests stay with the same instance. You can enable for ALB's but traffic will be sent at the target level. 
+- If you have an EC2 instance not receiving any traffic, you want to DISABLE sticky sessions or ENABLE cross-zone load balancing
+- No Cross Zone Load Balancing: Cannot send traffic from one overloaded AZ to a lightly loaded EZ elsewhere
+- Cross-Zone Load Balancing: Can send traffic across zones to balance evenly
+- 
+- S3 Signed URL's vs Cloudfront Pre Signed URLs
+- Multivalue Routing: Simple Routing but with Health Checks
 - 
