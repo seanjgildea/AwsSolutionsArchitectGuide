@@ -39,6 +39,7 @@
 - Aurora clusters can grow up to 64 TB in size and replica lag is less than 100 ms after primary instance has written an update
 - EBS can provision worker processes
 - KMS master keys are region specific 
+- KMS will rotate keys annually and use the appropriate keys to perform cryptographic operations
 - Minimum size of EBS: Throughput Optimized HDD is 500GB
 - Bastion hosts should be deployed in public subnets
 - Redshift Enhanced VPC Routing provides VPC resources access to Redshift. Redshift requires this to access S3 resources. 
@@ -47,6 +48,8 @@
 - For Redshift, you can enable Cross-Region Snapshots to another region 
 - For EBS Volumes, you create a snapshot and copy it to a new region
 - Cloudtrail monitors API calls and sends logs to an S3 bucket
+- Cognito Identity can also support OIDC, SAML and it's own identity pools
+- Cloudfront access logs and capturing requests sent to the Cloudfront API
 
 ## VPC Notes
 
@@ -106,3 +109,5 @@
 16. Sign-in via AWS Cognito User Pool (Third party federation) and sign-in via Cognito Identity Pool (federated identities) are independent of one another.
 
 17. Enhanced VPC Routing
+
+18. Failover Routing Policy:
