@@ -46,6 +46,9 @@
 - For Redshift, you can enable Cross-Region Snapshots to another region 
 - For EBS Volumes, you create a snapshot and copy it to a new region
 - Cloudtrail monitors API calls and sends logs to an S3 bucket
+
+## VPC Notes
+
 - Use Multi-AZ to ensure high availability for an RDS service rather than read replicas
 - S3 Pre-signed URL's are the perfect solution when you want to give temporary access to users for S3 buckets
 - Route 53 Multivalue answer routing is perfect for responding to DNS queries of up to 8 healthy records at random
@@ -53,11 +56,48 @@
 - Use ALB's if you want to do intelligent routing
 - Use Classic ELB's for basic routing 
 - Both ALB's and CLB's do not create an Elastic IP at creation, you need to copy the A record into Route 53
+
 - Sticky Sessions: Bind a users session to a specific EC2 instance ( classic load balancer ). This ensures all requests stay with the same instance. You can enable for ALB's but traffic will be sent at the target level. 
 - If you have an EC2 instance not receiving any traffic, you want to DISABLE sticky sessions or ENABLE cross-zone load balancing
+
 - No Cross Zone Load Balancing: Cannot send traffic from one overloaded AZ to a lightly loaded EZ elsewhere
 - Cross-Zone Load Balancing: Can send traffic across zones to balance evenly
 - 
 - S3 Signed URL's vs Cloudfront Pre Signed URLs
+- Pre-signed URLs include the creators security credentials, bucket name, object key and HTTP method (PUT) and expiration date for a specific duration. 
 - Multivalue Routing: Simple Routing but with Health Checks
-- 
+
+
+## Important Topics to know
+
+1. The 30 Day constraint in the S3 Lifecycle Policy before transitioning to S3-IA and S3-One Zone IA storage classes
+
+2. Enabling Cross-region snapshot copy for an AWS KMS-encrypted cluster
+
+3. Redis Auth / Amazon MQ / IAM DB Authentication
+
+4. Know that FTP is using TCP and not UDP (Helpful for questions where you are asked to troubleshoot the network flow)
+
+5. Difference between S3, EBS and EFS
+
+6. Kinesis Sharding
+
+7. Handling SSL Certificates in ELB ( Wildcard certificate vs SNI )
+
+8. Difference between OAI, Signed URL (CloudFront) and Pre-signed URL (S3)
+
+9. Different types of Aurora Endpoints
+
+10. The Default Termination Policy for Auto Scaling Group (Oldest launch configuration vs Instance Protection)
+
+11. VPC/VPN/ELB
+
+12. Route Table vs Security Group
+
+13. Gateways Endpoints vs VPC Endpoints
+
+14. Aurora Endpoints ( Instance, Reader, Cluster )
+
+15. Dynamo Streams: Associate a stream ARN with a lambda function you write. 
+
+16. Sign-in via AWS Cognito User Pool (Third party federation) and sign-in via Cognito Identity Pool (federated identities) are independent of one another.
