@@ -38,6 +38,7 @@
 - S3 event notification can invoke lambda functions for file processing
 - Aurora clusters can grow up to 64 TB in size and replica lag is less than 100 ms after primary instance has written an update
 - EBS can provision worker processes
+- KMS master keys are region specific 
 - Minimum size of EBS: Throughput Optimized HDD is 500GB
 - Bastion hosts should be deployed in public subnets
 - Redshift Enhanced VPC Routing provides VPC resources access to Redshift. Redshift requires this to access S3 resources. 
@@ -49,6 +50,8 @@
 
 ## VPC Notes
 
+- Gateway VPC Endpoint provides secure private access to S3 and DynamoDB without using the internet.
+- AWS PrivateLink provides secure private access to AWS services by adding an ENI within a VPC
 - Use Multi-AZ to ensure high availability for an RDS service rather than read replicas
 - S3 Pre-signed URL's are the perfect solution when you want to give temporary access to users for S3 buckets
 - Route 53 Multivalue answer routing is perfect for responding to DNS queries of up to 8 healthy records at random
@@ -101,3 +104,5 @@
 15. Dynamo Streams: Associate a stream ARN with a lambda function you write. 
 
 16. Sign-in via AWS Cognito User Pool (Third party federation) and sign-in via Cognito Identity Pool (federated identities) are independent of one another.
+
+17. Enhanced VPC Routing
