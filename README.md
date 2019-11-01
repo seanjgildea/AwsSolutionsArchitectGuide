@@ -72,6 +72,31 @@
 - S3 Signed URL's vs Cloudfront Pre Signed URLs
 - Pre-signed URLs include the creators security credentials, bucket name, object key and HTTP method (PUT) and expiration date for a specific duration. 
 - Multivalue Routing: Simple Routing but with Health Checks
+- DB encryption must be done at creation time, but also make sure the underlying db instance supports encryption
+- S3 static content website hosting can ebe enabled by choosing "Static website hosting" then selecting a bucket to host your website
+- Alias records provide Route 53 specific extension to the DNS functionality. An alias contains a pointer to a Cloudfront dist, EBS env, ELB, ALB, CLB or S3 bucket.
+- AWS Storage Gateway-cached volumes let you use S3 as your primary data storage while retaining frequent data in your storage gateway.
+- Elastic Beanstalk can be used to host Docker containers. 
+- SQS helps facilitate horizontal scaling of encoding tasks
+- Difference between AWS Direct Connect and VPC VPN is that the latter goes over the internet using IPSec via encrypted network connectivity
+- AWS Lambda automatically reports metrics through AWS Cloudwatch on your behalf through Cloudwatch Logs
+- Cloudfront can use signed URLs or signed cookies via date, time, ip or range of ip's.
+- Origin Access Identity users enforce using Cloudfront URLs instead of the S3 bucket. Setup custom origin headers in S3 to prevent access. 
+- In order for S3 buckets to 'serve content', Cross-Origin Resource Sharing must be configured
+- When launching an EC2 instance, you can pass user data that performs common automated configuration tasks and run scripts after the instance starts
+- VM Import/Export enables customers to import VM images in order to create EC2 instances. 
+- AWS Fargate allows you to run your containerized apps without the need to provision and manage the backend infrastructure. 
+- A public IP address of an EC2 instance is released after an instance is stopped/started. 
+- AWS PrivateLink provides a secure private connectivity between separate VPCs whereas VPC peering is not secure. 
+- Redshift never deletes manual snapshots automatically like it does for automatic snapshots ( 1-35 days max )
+- EMR is a managed cluster platform for running big data frameworks, processing a mass amt of data in/out of aws data stores/databases
+- Cloudwatch Metrics help you monitor the physical aspects of a Redshift cluster. 
+- Cloudfront query string forward only supports Web Distribution. The delimiter must always be an & character. Params are case sensitive.
+- Weighted Routing Policy is the ideal approach for Blue-Green deployments
+- Throughput Optimized (st1) is good for Max Throughputh Volume of 500 MiB/s in batch processing activities
+- Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry for storing, managing and deploying docker container images
+- Tags on instances with segregated access via IAM policies will allow managing relevant accesses
+- DB Sharding allows you to break up a DB into smaller pieces ( Tables) in order to equally split up requests over more instances
 
 
 ## Important Topics to know
