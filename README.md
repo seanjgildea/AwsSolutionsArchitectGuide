@@ -158,3 +158,4 @@
 - When you create or modify your DB instance to run as a Multi-AZ deployment, Amazon RDS automatically provisions and maintains a synchronous standby replica in a different Availability Zone
 - AWS RDS Enhanced Monitoring metrics are stored in the CloudWatch Logs for 30 days by default. 
 - You can access the OS of AWS EMR (Hadoop framework) EC2 instances. 
+- [SAML Auth](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
