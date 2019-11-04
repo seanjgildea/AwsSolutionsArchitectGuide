@@ -136,3 +136,25 @@
 17. Enhanced VPC Routing
 
 18. Failover Routing Policy:
+
+## Tutorial Dojo exam #1
+
+- With EBS-backed EC2 instances, when shut down, data is unavailable until the instance is restarted
+- Understand CIDR 
+- Redshift Spectrum lets a data analyst conduct fast, complex analysis on objects stored on the AWS cloud
+- DynamoDB partition Keys?
+- IAM Databse Authentication works with MySQL and Postgres, no password needed to connect to a DB instance, instead a token auth
+- AWS Budgets sets alerts for costs or usage exceeded
+- Client side encryption is the act of encrypting data before sending it to AWS S3.
+- To enable Client-side encryption, use AWS KMS-managed customer master key and use a client side master key
+- No additional charge for Cloudformation
+- You can also install CloudWatch Agent to collect more system-level metrics from Amazon EC2 instances like Memory utilization
+- When you create or update Lambda functions that use environment variables, AWS Lambda encrypts them using the AWS Key Management Service.
+- 1. Subtract 32 with the mask number : (32 - 27) = 5
+- 2. Raise the number 2 to the power of the answer in Step #1 : 2^ 5 = (2 * 2 * 2 * 2 * 2) = 32
+- Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache that can reduce response times from milliseconds to microseconds.
+- You can join multiple gp2, io1, st1, or sc1 volumes together in a RAID 0 configuration to use the available bandwidth.
+- AWS Directory Service provides multiple ways to use Amazon Cloud Directory and Microsoft Active Directory (AD) with other AWS services
+- When you create or modify your DB instance to run as a Multi-AZ deployment, Amazon RDS automatically provisions and maintains a synchronous standby replica in a different Availability Zone
+- AWS RDS Enhanced Monitoring metrics are stored in the CloudWatch Logs for 30 days by default. 
+- You can access the OS of AWS EMR (Hadoop framework) EC2 instances. 
