@@ -159,3 +159,27 @@
 - AWS RDS Enhanced Monitoring metrics are stored in the CloudWatch Logs for 30 days by default. 
 - You can access the OS of AWS EMR (Hadoop framework) EC2 instances. 
 - [SAML Auth](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
+
+# Tutorial Dojo Exam 2: 
+### Key Takeaways
+- By default, all data stored by AWS Storage Gateway in S3 is encrypted server-side with Amazon S3-Managed Encryption Keys (SSE-S3)
+- Data stored in Amazon Glacier is protected by default; only vault owners have access to the Amazon Glacier resources they create. 
+- Continued: Amazon Glacier encrypts your data at rest by default and supports secure data transit with SSL
+- You cannot use VPC-2 to extend the peering relationship that exists between VPC-1 and the on-premises network. 
+- Traffic from the corporate network can't directly access VPC-1 by using the VPN connection or the AWS Direct Connect connection to VPC-2
+- Since the instance is using a RAID configuration, the snapshot process is different. You should stop all I/O activity of the volumes before creating a snapshot.
+- If one of the EC2 instances which is not able to send nor receive traffic over the Internet. Check that it has a Public IP address associated with it. 
+- If DynamoDB table used by Kinesis does not have enough capacity to store the lease data: Increase the write capacity assigned to the shard table. 
+### Bonus 
+- Using Amazon CloudWatch alarm actions, you can create alarms that automatically stop, terminate, reboot, or recover your EC2 instances. 
+- Cont. You can use the stop or terminate actions to help you save money when you no longer need an instance to be running. 
+- Cont. You can use the reboot and recover actions to automatically reboot those instances or recover them onto new hardware if a system impairment occurs.
+- EC2 Instance metadata is the data about your instance that you can use to configure or manage the running instance. 
+- Cont. You can get the instance ID, public keys, public IP address and many other information from the instance metadata by firing a URL command in your instance to this URL:
+- http://169.254.169.254/latest/meta-data/
+- The best way to implement a bastion host is to create a small EC2 instance which should only have a security group from a particular IP address for maximum security. 
+- IAM roles are designed so that your applications can securely make API requests from your instances, without requiring you to manage the security credentials that the applications use. 
+- Since the instance is using a RAID configuration, the snapshot process is different. You should stop all I/O activity of the volumes before creating a snapshot.
+- Cont. Stop all applications from writing to the RAID array. Flush all caches to the disk. Confirm that the associated EC2 instance is no longer writing to the RAID array by taking actions 
+- Cont. such as freezing the file system, unmounting the RAID array, or even shutting down the EC2 instance. After taking steps to halt all disk-related activity to the RAID array, take a snapshot of each EBS volume in the array.
+- RAID arrays introduce data interdependencies and a level of complexity not present in a single EBS volume configuration.
