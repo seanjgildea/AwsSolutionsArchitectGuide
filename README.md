@@ -160,7 +160,6 @@
 - You can access the OS of AWS EMR (Hadoop framework) EC2 instances. 
 - [SAML Auth](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
 
-# Tutorial Dojo Exam 2: 
 ### Key Takeaways
 - By default, all data stored by AWS Storage Gateway in S3 is encrypted server-side with Amazon S3-Managed Encryption Keys (SSE-S3)
 - Data stored in Amazon Glacier is protected by default; only vault owners have access to the Amazon Glacier resources they create. 
@@ -183,3 +182,39 @@
 - Cont. Stop all applications from writing to the RAID array. Flush all caches to the disk. Confirm that the associated EC2 instance is no longer writing to the RAID array by taking actions 
 - Cont. such as freezing the file system, unmounting the RAID array, or even shutting down the EC2 instance. After taking steps to halt all disk-related activity to the RAID array, take a snapshot of each EBS volume in the array.
 - RAID arrays introduce data interdependencies and a level of complexity not present in a single EBS volume configuration.
+
+# Tutorial Dojo Exam #2
+- The maximum message retention in SQS is 14 days 
+- In Amazon SQS, you can configure the message retention period to a value from 1 minute to 14 days. 
+- Cont. The default is 4 days. Once the message retention limit is reached, your messages are automatically deleted.
+- EBS volumes support live configuration changes while in production which means that you can modify the volume type, volume size, and IOPS capacity without service interruptions.
+- An EBS volume can only be attached to one EC2 instance at a time.
+- Cont. After you create a volume, you can attach it to any EC2 instance in the same Availability Zone.
+
+Tuesday Night ( 34-65 - 22 of 31)
+- When failing over, Amazon RDS simply flips the canonical name record (CNAME) for your DB instance to point at the standby, which is in turn promoted to become the new primary. 
+- You can attach a network interface to an instance when it's running (hot attach), when it's stopped (warm attach), or when the instance is being launched (cold attach).
+- You can use Amazon Cognito to deliver temporary, limited-privilege credentials to your application so that your users can access AWS resources. 
+- Amazon Cognito identity pools support both authenticated and unauthenticated identities. 
+- You can retrieve a unique Amazon Cognito identifier (identity ID) for your end user immediately if you're allowing unauthenticated users or after you've set the login tokens in the credentials provider if you're authenticating users.
+- SNI Custom SSL relies on the SNI extension of the Transport Layer Security protocol, which allows multiple domains to serve SSL traffic over the same IP address by including the hostname which the viewers are trying to connect to.
+- An S3 bucket that is configured to host a static website. The bucket must have the same name as your domain or subdomain. 
+- Cont. For example, if you want to use the subdomain portal.tutorialsdojo.com, the name of the bucket must be portal.tutorialsdojo.com.
+- Amazon Simple Queue Service (SQS) and Amazon Simple Workflow Service (SWF) are the services that you can use for creating a decoupled architecture in AWS.
+- Main culprit is that your application does not issue a delete command to the SQS queue after processing the message, which is why this message went back to the queue and was processed multiple times.
+- The Amazon S3 notification feature enables you to receive notifications when certain events happen in your bucket. To enable notifications, you must first add a notification configuration identifying
+- Cont. the events you want Amazon S3 to publish, and the destinations where you want Amazon S3 to send the event notifications.
+- DynamoDB Time-to-Live (TTL) mechanism enables you to manage web sessions of your application easily
+- Amazon DynamoDB stores structured data indexed by primary key and allow low latency read and write access to items ranging from 1 byte up to 400KB. 
+- Amazon S3 stores unstructured blobs and is suited for storing large objects up to 5 TB
+- AWS Security Token Service (AWS STS) is the service that you can use to create and provide trusted users with temporary security credentials that can control access to your AWS resources.
+- You can use Amazon Data Lifecycle Manager (Amazon DLM) to automate the creation, retention, and deletion of snapshots taken to back up your Amazon EBS volumes. 
+- In Auto Scaling, the following statements are correct regarding the cooldown period:
+- 1. It ensures that the Auto Scaling group does not launch or terminate additional EC2 instances before the previous scaling activity takes effect.
+- 2. Its default value is 300 seconds.
+- 3. It is a configurable setting for your Auto Scaling group.
+- Network ACL Rules are evaluated by rule number, from lowest to highest, and executed immediately when a matching allow/deny rule is found.
+- When you create an EBS volume in an Availability Zone, it is automatically replicated within that zone only to prevent data loss due to a failure of any single hardware component. After you create a volume, you can attach it to any EC2 instance in the same Availability Zone.
+- Client-side encryption is the act of encrypting data before sending it to Amazon S3 while SSE-S3 uses AES-256 encryption.
+- The term pilot light is often used to describe a DR scenario in which a minimal version of an environment is always running in the cloud. The idea of the pilot light is an analogy that comes from the gas heater.
+- To enable IPv6 resolution, you would need to create a second resource record, tutorialsdojo.com ALIAS AAAA -> myelb.us-west-2.elb.amazonnaws.com, this is assuming your Elastic Load Balancer has IPv6 support.
